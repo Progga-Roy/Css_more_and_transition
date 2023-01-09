@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <style>
+        
+        :root{
+            --primary-color: steelblue;
+            --secondary-color: lightgray
+
+            
+        }
+         .div {
+            width: 150px;
+            height: 150px;
+            border: 2px solid purple;
+        }
+        
+        #header-3{
+            color: var(--primary-color);
+        }
+        p{
+            border: 2px solid var(--primary-color);
+            width: calc(100% - 600px);
+            height: 60px;
+            background-color: var(--secondary-color);
+        }
+        .lorem{
+            border-bottom: 2px dotted var(--primary-color);
+        }
+        #box-3{
+            color: peru;
+            /* display: none; */
+            visibility: hidden;
+        }
+        h1{
+            color: steelblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div" id="box-1">
+        <h3>box-1</h3>
+    </div>
+    <div class="div" id="box-2">
+        <h3>box-2</h3>
+    </div>
+    <div class="div" id="box-3">
+        <h3>box-3</h3>
+    </div>
+    <div class="div" id="box-4">
+        <h3>box-4</h3>
+    </div>
+
+    <section>
+       <div class="div1" id="header-1">heading-1</div>
+       <div class="div1" id="header-2">heading-2</div>
+       <div class="div1" id="header-3">heading-3</div>
+       <div class="div1" id="header-4">heading-4</div>
+       <p>A small talk</p>
+       <div>
+        <h3 class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing.</h3>
+       </div>
+    </section>
+</body>
+
+</html>
